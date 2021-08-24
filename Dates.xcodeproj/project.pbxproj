@@ -13,6 +13,12 @@
 		8CB1469026D23C740029C17C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1467B26D23C700029C17C /* ContentView.swift */; };
 		8CB1469126D23C740029C17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB1467C26D23C740029C17C /* Assets.xcassets */; };
 		8CB1469226D23C740029C17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CB1467C26D23C740029C17C /* Assets.xcassets */; };
+		8CB1469C26D23E3E0029C17C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1469B26D23E3E0029C17C /* CircleImage.swift */; };
+		8CB1469D26D23E3E0029C17C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1469B26D23E3E0029C17C /* CircleImage.swift */; };
+		8CB1469F26D263640029C17C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1469E26D263640029C17C /* MapView.swift */; };
+		8CB146A026D263640029C17C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1469E26D263640029C17C /* MapView.swift */; };
+		8CB146A526D2C8220029C17C /* DatesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CB146A426D2C8220029C17C /* DatesData.json */; };
+		8CB146A626D2C8220029C17C /* DatesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8CB146A426D2C8220029C17C /* DatesData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,9 @@
 		8CB1468926D23C740029C17C /* Dates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CB1468B26D23C740029C17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CB1468C26D23C740029C17C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		8CB1469B26D23E3E0029C17C /* CircleImage.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; tabWidth = 4; };
+		8CB1469E26D263640029C17C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		8CB146A426D2C8220029C17C /* DatesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DatesData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +66,10 @@
 		8CB1467926D23C700029C17C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				8CB1467A26D23C700029C17C /* DatesApp.swift */,
-				8CB1467B26D23C700029C17C /* ContentView.swift */,
+				8CB146A126D2BE090029C17C /* Views */,
+				8CB146A326D2BE210029C17C /* Ressources */,
 				8CB1467C26D23C740029C17C /* Assets.xcassets */,
+				8CB146A226D2BE120029C17C /* Model */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -88,6 +98,32 @@
 				8CB1468C26D23C740029C17C /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		8CB146A126D2BE090029C17C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CB1467B26D23C700029C17C /* ContentView.swift */,
+				8CB1469E26D263640029C17C /* MapView.swift */,
+				8CB1467A26D23C700029C17C /* DatesApp.swift */,
+				8CB1469B26D23E3E0029C17C /* CircleImage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8CB146A226D2BE120029C17C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CB146A326D2BE210029C17C /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				8CB146A426D2C8220029C17C /* DatesData.json */,
+			);
+			path = Ressources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CB1469126D23C740029C17C /* Assets.xcassets in Resources */,
+				8CB146A526D2C8220029C17C /* DatesData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CB1469226D23C740029C17C /* Assets.xcassets in Resources */,
+				8CB146A626D2C8220029C17C /* DatesData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CB1468F26D23C740029C17C /* ContentView.swift in Sources */,
+				8CB1469F26D263640029C17C /* MapView.swift in Sources */,
 				8CB1468D26D23C740029C17C /* DatesApp.swift in Sources */,
+				8CB1469C26D23E3E0029C17C /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CB1469026D23C740029C17C /* ContentView.swift in Sources */,
+				8CB146A026D263640029C17C /* MapView.swift in Sources */,
 				8CB1468E26D23C740029C17C /* DatesApp.swift in Sources */,
+				8CB1469D26D23E3E0029C17C /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
